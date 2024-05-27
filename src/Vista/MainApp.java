@@ -39,7 +39,7 @@ public MainPanel(){
 class MenuPanel extends JPanel{
     JMenuBar menuBar;
     JMenu menu;
-    JMenuItem item1, item2;
+    JMenuItem item1, item2, item3;
 
     public MenuPanel(MainPanel panelPrincipal,JPanel panelCentro){
         Panel1 panel1= new Panel1();
@@ -49,11 +49,14 @@ class MenuPanel extends JPanel{
         menu= new JMenu("menú");
         item1= new JMenuItem("item1");
         item2= new JMenuItem("item2");
+        item3= new JMenuItem("Volver");
         menu.add(item1);
         menu.add(item2);
+        menu.add(item3);
         menuBar.add(menu);
         item1.addActionListener(e -> ControladorMain.nuevoPanelActivo(panel1));
-        item1.addActionListener(e -> ControladorMain.nuevoPanelActivo(panel2));
+        item2.addActionListener(e -> ControladorMain.nuevoPanelActivo(panel2));
+        item3.addActionListener(e -> ControladorMain.nuevoPanelActivo(panelCentro));
         setLayout(new GridLayout(1,1));
         add(menuBar);
     }

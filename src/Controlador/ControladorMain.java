@@ -17,4 +17,8 @@ public class ControladorMain {
         panelPadre.repaint();
         panelActivo = nuevoPanel;
     }
+
+    public static JPanel getPanelActivo() {
+        return panelActivo;
+    }
 }

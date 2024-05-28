@@ -1,4 +1,4 @@
-package Modelo;
+package Ejercicio1.Modelo;
 
 public class DB {
     private static DB dbInstance; //Variable para almacenar la unica instancia de la clase

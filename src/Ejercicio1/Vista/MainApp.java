@@ -1,9 +1,8 @@
-package Vista;
+package Ejercicio1.Vista;
 
-import Controlador.ControladorMain;
+import Ejercicio1.Controlador.ControladorMain;
 
 import javax.swing.*;
-import javax.swing.plaf.PanelUI;
 import java.awt.*;
 
 public class MainApp {

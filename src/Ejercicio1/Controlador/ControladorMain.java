@@ -1,4 +1,4 @@
-package Controlador;
+package Ejercicio1.Controlador;
 
 import javax.swing.*;
 
